@@ -1,0 +1,41 @@
+https://api.tomtom.com/routing/1/calculateRoute/12.9510817134,77.676832612:12.9546785144,77.6310649674/json?key=T4NeSzdsHG07NmEA7AvH2Jv2IL1s3qUp&travelMode=car
+
+
+https://api.mapbox.com/directions/v5/mapbox/driving/77.676832612,12.9510817134;77.6310649674,12.9546785144?access_token=pk.eyJ1Ijoia2FpLWxpdSIsImEiOiJjazduNmtxcTkwcHlyM2RxNjVqdzBqcmdjIn0.ElP1f3BdnelgeXuRR4Q3BA&geometries=geojson&alternatives=false
+
+
+https://api.nextbillion.io/directions/json?origin=12.95880269,77.6563981&destination=13.00446851,77.56232766&key=f5df881bb6f744d3b2cd2b06a41c5df5
+
+
+https://maps.googleapis.com/maps/api/js/DirectionsService.Route?5m4&1m3&1m2&1d12.9510817134&2d77.676832612&5m4&1m3&1m2&1d12.9546785144&2d77.6310649674&6e0&7b0&12sen-GB&23e1&callback=_xdc_._lzinyr&key=AIzaSyCLpGY5JdZECUpxTm9UJyrjWBrMV4yN8XM&token=28373
+
+
+https://api.mapbox.com/directions/json?origin=12.95880269,77.6563981&destination=13.00446851,77.56232766&key=f5df881bb6f744d3b2cd2b06a41c5df5
+
+
+#api template
+
+#host
+host = "https://api.nextbillion.io/"
+key = "617ff6e56f4d4243a745de63199190d4"
+
+#directions
+direction_origin = ""
+direction_destination = ""
+directions_template = f"{host}directions/json?origin={direction_origin}&destination={direction_destination}&key={key}"
+
+#distance matrix
+distance_martrix_o1 = ""
+distance_martrix_o2 = ""
+distance_martrix_d1 = ""
+distance_martrix_d2 = ""
+distance_martrix = f"{host}distancematrix/json?origins={distance_martrix_o1}%7C{distance_martrix_o2}&destinations={distance_martrix_d1}%7C{distance_martrix_d2}&key={key}"
+
+#snap
+snaptoroad_p1 = ""
+snaptoroad_p2 = ""
+snaptoroad_p3 = ""
+snaptoroad_p4 = ""
+snaptoroad_p5 = ""
+snaptoroad_p6 = ""
+snaptoroad = f"{host}snapToRoads/json?path={snaptoroad_p1}%7C{snaptoroad_p2}%7C{snaptoroad_p3}%7C{snaptoroad_p4}%7C{snaptoroad_p5}%7C{snaptoroad_p6}&key={key}"
